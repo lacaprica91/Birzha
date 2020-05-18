@@ -13128,11 +13128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\BirzhaProject\\BirzhaApp\\BirzhaApp\\BirzhaApp.csproj",
+      "projectUniqueName": "C:\\Users\\lacaprica\\Source\\Repos\\lacaprica91\\Birzha\\BirzhaApp\\BirzhaApp\\BirzhaApp.csproj",
       "projectName": "BirzhaApp",
-      "projectPath": "C:\\BirzhaProject\\BirzhaApp\\BirzhaApp\\BirzhaApp.csproj",
+      "projectPath": "C:\\Users\\lacaprica\\Source\\Repos\\lacaprica91\\Birzha\\BirzhaApp\\BirzhaApp\\BirzhaApp.csproj",
       "packagesPath": "C:\\Users\\lacaprica\\.nuget\\packages\\",
-      "outputPath": "C:\\BirzhaProject\\BirzhaApp\\BirzhaApp\\obj\\",
+      "outputPath": "C:\\Users\\lacaprica\\Source\\Repos\\lacaprica91\\Birzha\\BirzhaApp\\BirzhaApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

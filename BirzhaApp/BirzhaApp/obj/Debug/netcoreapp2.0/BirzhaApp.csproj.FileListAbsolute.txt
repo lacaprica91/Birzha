@@ -9,3 +9,14 @@ C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.AssemblyI
 C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.dll
 C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.pdb
 C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.csprojAssemblyReference.cache
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\bin\Debug\netcoreapp2.0\BirzhaApp.deps.json
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\bin\Debug\netcoreapp2.0\BirzhaApp.runtimeconfig.json
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\bin\Debug\netcoreapp2.0\BirzhaApp.runtimeconfig.dev.json
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\bin\Debug\netcoreapp2.0\BirzhaApp.dll
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\bin\Debug\netcoreapp2.0\BirzhaApp.pdb
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.csprojAssemblyReference.cache
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.csproj.CoreCompileInputs.cache
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.AssemblyInfoInputs.cache
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.AssemblyInfo.cs
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.dll
+C:\Users\lacaprica\Source\Repos\lacaprica91\Birzha\BirzhaApp\BirzhaApp\obj\Debug\netcoreapp2.0\BirzhaApp.pdb
