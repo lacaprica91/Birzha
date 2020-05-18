@@ -1,0 +1,11 @@
+C:\BirzhaProject\BirzhaApp\BirzhaApp\bin\Any CPU\Release\netcoreapp2.0\BirzhaApp.deps.json
+C:\BirzhaProject\BirzhaApp\BirzhaApp\bin\Any CPU\Release\netcoreapp2.0\BirzhaApp.runtimeconfig.json
+C:\BirzhaProject\BirzhaApp\BirzhaApp\bin\Any CPU\Release\netcoreapp2.0\BirzhaApp.runtimeconfig.dev.json
+C:\BirzhaProject\BirzhaApp\BirzhaApp\bin\Any CPU\Release\netcoreapp2.0\BirzhaApp.dll
+C:\BirzhaProject\BirzhaApp\BirzhaApp\bin\Any CPU\Release\netcoreapp2.0\BirzhaApp.pdb
+C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Any CPU\Release\netcoreapp2.0\BirzhaApp.csprojResolveAssemblyReference.cache
+C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Any CPU\Release\netcoreapp2.0\BirzhaApp.csproj.CoreCompileInputs.cache
+C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Any CPU\Release\netcoreapp2.0\BirzhaApp.AssemblyInfoInputs.cache
+C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Any CPU\Release\netcoreapp2.0\BirzhaApp.AssemblyInfo.cs
+C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Any CPU\Release\netcoreapp2.0\BirzhaApp.dll
+C:\BirzhaProject\BirzhaApp\BirzhaApp\obj\Any CPU\Release\netcoreapp2.0\BirzhaApp.pdb

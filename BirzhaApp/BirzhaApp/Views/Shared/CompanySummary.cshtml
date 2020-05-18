@@ -1,0 +1,13 @@
+﻿@model Company
+
+<div class="card card-body">
+    <div class="bg-light p-1">
+        <h4>
+            @Model.Name
+            <span class="badge badge-pill badge-primary" style="float: right">
+                <small>Company ID: @Model.CompanyID</small>
+            </span>
+        </h4>
+    </div>
+    <div class="card-text p-1">@Model.Address1 @Model.City</div>
+</div>

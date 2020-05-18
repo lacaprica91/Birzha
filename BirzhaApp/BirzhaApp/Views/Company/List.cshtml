@@ -1,0 +1,17 @@
+﻿@model CompaniesListViewModel
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h2>List of companies</h2>
+
+@foreach (var c in Model.Companies)
+{
+    @Html.Partial("CompanySummary", c)
+}
+
+<div page-model="@Model.PagingInfo" page-action="List"  page-classes-enabled="true"
+     page-class="btn" page-class-normal="btn-light"
+     page-class-selected="btn-primary" class="btn-group m-1">
+</div>

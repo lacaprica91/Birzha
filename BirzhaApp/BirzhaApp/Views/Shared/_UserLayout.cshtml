@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BirzhaApp</title>
+
+    <environment include="Development, Production">
+        <link rel="stylesheet"
+              asp-href-include="~/lib/bootstrap/dist/**/*.css"
+              asp-fallback-href-exclude="**/*-reboot*,**/*-grid*" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment include="Development, Production">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/font-awesome-5/svg-with-js/js/fontawesome-all.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+    <style>
+        .navbar .nav-item {
+            min-width: 120px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .nav-item:hover {
+            cursor: pointer;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            margin-bottom: -2px;
+        }
+        .nav-item:hover > a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav-item:active {
+            cursor: pointer;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            margin-bottom: -2px;
+        }
+        .nav-item:active > a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body style="padding-top: 77px">
+    <div class="container-fluid header fixed-top px-5">
+        <nav class="navbar navbar-expand py-1">
+            <div class="col-2 offset-1 text-right">
+                <a class="navbar-brand text-white" asp-controller="Home" asp-action="Index">Birzha App</a>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="xxx" placeholder="Search" />
+                    <div class="input-group-append">
+                        <div class="input-group-text"> <i class="fas fa-search"></i> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 offset-1">
+                <ul class="navbar-nav text-center mt-1">
+                    <li class="nav-item mr-2" style="min-width: 100px;">
+                        <a href="@Url.Action("Home","Home")">
+                            <i class="fas fa-home  mt-1"></i>
+                            <div class="w-100"></div>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2" style="min-width: 100px;">
+                        <a href="#">
+                            <i class="fas fa-industry mt-1"></i>
+                            <div class="w-100"></div>
+                            <span>Birzha Hub</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2" style="min-width: 100px;">
+                        <a href="#">
+                            <i class="fas fa-briefcase mt-1"></i>
+                            <div class="w-100"></div>
+                            <span>Jobs</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2" style="min-width: 100px;">
+                        <a href="#">
+                            <i class="fas fa-building mt-1"></i>
+                            <div class="w-100"></div>
+                            <span>My business</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2" style="min-width: 100px">
+                        <a href="@Url.Action("MyProfile","Account")">
+                            <i class="fas fa-user mt-1"></i>
+                            <div class="w-100"></div>
+                            <span>My profile</span>
+                        </a>
+                    </li>
+                    <li style="min-width: 1px; border-right: 1px solid silver;"></li>
+                    <li class="nav-item text-center ml-2">
+                        <a asp-controller="Account" asp-action="Logout">
+                            <i class="fas fa-cog mt-1"></i>
+                            <div class="w-100"></div>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    @RenderBody()
+
+    <footer class="pt-3">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-3">
+                    <div class="pt-2"> &copy; @DateTime.Now.Year - BirzhaApp </div>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="UserAgreement" class="btn btn-link">User Agreement</a>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="PrivPolicy" class="btn btn-link">Privacy Policy</a>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="CookiePolicy" class="btn btn-link">Cookie Policy</a>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="CopyPolicy" class="btn btn-link">Copyright Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

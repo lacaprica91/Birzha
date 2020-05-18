@@ -1,0 +1,19 @@
+﻿@model IEnumerable<int>
+
+<a class="btn btn-block btn-secondary"
+   asp-action="List"
+   asp-controller="Company"
+   asp-route-id="">
+    Home
+</a>
+
+@foreach (int id in Model )
+{
+    <a class="btn btn-block btn-secondary"
+       asp-action="List"
+       asp-controller="Company"
+       asp-route-id="@id"
+       asp-route-companyPage="1">
+        @id
+    </a>
+}

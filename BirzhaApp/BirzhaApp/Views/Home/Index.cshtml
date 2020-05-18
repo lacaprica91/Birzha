@@ -1,0 +1,61 @@
+﻿@model CreateUser
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div id="wrapper" class="container-fluid d-table">
+    <div class="d-table-cell align-middle">
+        <div class="row justify-content-center">
+
+            <div class="col-3 login-form" style="min-width: 250px;">
+                <div class="row text-center pt-4">
+                    <div class="col">
+                        <h4>Foundations that stand the test of time</h4>
+                        <h6>Join construction industry portal for free</h6>
+                    </div>
+                </div>
+                <hr />
+                <div class="row pb-1 px-2">
+                    <div class="col">
+                        @using (Html.BeginForm("Create", "Account"))
+                        {
+                            <div asp-validation-summary=" All" class="text-danger"></div>
+                            <div class="form-group">
+                                <label asp-for="FirstName"></label>
+                                <input asp-for="FirstName" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="LastName"></label>
+                                <input asp-for="LastName" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password"></label>
+                                <input asp-for="Password" class="form-control" />
+                            </div>
+                            <hr />
+                            <p class="text-center"><small>By clicking Join Now, you agree to the User Agreement, Privacy Policy, and Cookie Policy.</small></p>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-info btn-block">Join Now</button>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.login-form').hide().fadeIn().animate({
+            'bottom': '10px'
+        }, { duration: 'normal', queue: false }, function () {
+            // Animation complete.
+        });
+    });
+</script>

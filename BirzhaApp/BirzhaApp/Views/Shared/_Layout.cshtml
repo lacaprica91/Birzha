@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BirzhaApp</title>
+
+    <environment include="Development, Production">
+        <link rel="stylesheet"
+              asp-href-include="~/lib/bootstrap/dist/**/*.css"
+              asp-fallback-href-exclude="**/*-reboot*,**/*-grid*" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    @*<environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+    </environment>*@
+    <environment include="Development, Production">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+</head>
+<body>
+    <div class="container-fluid header py-2">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="flex-column">
+                    <a class="navbar-brand text-white" href="#">Birzha App</a>
+                    @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">BirzhaApp</a>*@
+                </div>
+                <div class="flex-column align-content-end">
+                    @if (!User?.Identity?.IsAuthenticated ?? false) {
+                        @await Component.InvokeAsync("LoginForm");
+                    } else {
+                        <a asp-controller="Account" asp-action="Logout" class="btn btn-outline-secondary">Sign Out</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    @RenderBody()
+    
+    <footer class="pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="pt-2"> &copy; @DateTime.Now.Year - BirzhaApp </div>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="UserAgreement" class="btn btn-link">User Agreement</a>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="PrivPolicy" class="btn btn-link">Privacy Policy</a>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="CookiePolicy" class="btn btn-link">Cookie Policy</a>
+                </div>
+                <div class="col-2">
+                    <a asp-controller="Home" asp-action="CopyPolicy" class="btn btn-link">Copyright Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

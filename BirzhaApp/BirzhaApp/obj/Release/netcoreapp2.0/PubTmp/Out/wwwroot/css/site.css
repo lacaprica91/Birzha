@@ -1,0 +1,238 @@
+﻿html {
+    font-family: 'Arimo Sans';
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arimo Sans';
+    height: 100%;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* HEADER */
+.header {
+    font-family: 'Arimo Sans';
+    background-color: #2d4553;
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+.header a {
+    color: silver;
+}
+
+.header a:hover {
+    color: white;
+}
+
+.header .btn-outline-light:hover {
+    color: black;
+}
+
+.header .btn-outline-info {
+    color: white;
+}
+
+.navbar-brand {
+    font-family: Smoothlan;
+    font-size: 1.4rem;
+}
+
+/* MAIN (HOME) */
+#wrapper {
+    background-image: url("../images/bg2_dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+}
+
+.login-form {
+    background-color: rgba(248,248,248, 0.9);
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+.shadow-box {
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.5);
+}
+
+/* IDENTITY CARD */
+.card.sticky-top {
+    /*z-index: 1;*/
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+}
+.profile-pic {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 140px;
+    z-index: 1001;
+}
+.profile-pic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /*box-shadow: 0px 0px 5px 0px #c1c1c1;*/
+    box-shadow: 0 0 0 3px rgba(255,255,255,.8),0 4px 5px rgba(107,5,0,.6),0 0 40px 40px rgba(255,255,255,.15);
+}
+.social-bar {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.social-bar a {
+    display: inline-block;
+    color: #951009;
+    text-decoration: none;
+    padding: 5px;
+    line-height: 18px;
+    border-radius: 5px;
+}
+.social-bar a:hover {
+    color: cyan;
+    background: rgba(255,255,255,.3);
+    transition: .25s ease-in-out;
+}
+/*#front, #back {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+#front {
+    transform: rotateY(0deg);
+    overflow: hidden;
+    z-index: 1;
+}
+#back {
+    transform: rotateY(180deg);
+    background-color: rgba(255,255,255,.6);
+    display: table;
+    z-index: 2;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 50px;
+}
+#back .back-info {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.flip #front {
+    transform: rotateY(180deg);
+}
+.flip #back {
+    transform: rotateY(360deg);
+}*/
+/* FOOTER */
+footer {
+    border-top: 1px solid #585858;
+    font-family: 'Arimo Sans';
+    background-color: #008080;
+    box-shadow: 0 50vh 0 50vh #008080; /*end should be color of your choice (same as BG color)*/
+}
+footer .btn-link {
+    font-family: 'Arimo Sans';
+    font-weight: bold;
+    color: #343a40;
+}
+footer .btn-link:hover {
+    font-weight: bold;
+    color: white;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 1rem;
+    line-height: 1.0;
+    /*-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;*/
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* MEDIA TAGS (DIFFERENT SCREEN SIZES) */
+@media screen and (max-width: 1980px) {
+    #wrapper {
+        height: 780px;
+    }
+}
+@media screen and (max-width: 1680px) {
+    /*TODO*/
+    #wrapper {
+        height: 620px;
+    }
+}
+@media screen and (max-width: 1360px) {
+    /*TODO*/
+    #wrapper {
+        height: 480px;
+    }
+}
+@media screen and (max-width: 800px) {
+    /*TODO*/
+    #wrapper {
+        height: 380px;
+    }
+}
+@media screen and (max-width: 640px) {
+    /*TODO*/
+    #wrapper {
+        height: 220px;
+    }
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Amerto';
+    src: url('../fonts/AMERTO__.TTF');
+}
+@font-face {
+    font-family: 'Harabara';
+    src: url('../fonts/Harabara.ttf');
+}
+@font-face {
+    font-family: 'Smoothlan';
+    src: url('../fonts/Smoolthan Medium.otf');
+}
+@font-face {
+    font-family: "Arimo Sans";
+    src: url("../fonts/Arimo-Regular.ttf");
+}
+@font-face {
+    font-family: "Arimo Sans";
+    src: url("../fonts/Arimo-Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Arimo Sans";
+    src: url("../fonts/Arimo-Italic.ttf");
+    font-style: italic;
+} 
+@font-face {
+    font-family: "Arimo Sans";
+    src: url("../fonts/Arimo-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
